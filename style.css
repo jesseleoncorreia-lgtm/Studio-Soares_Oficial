@@ -1,0 +1,366 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --azul: #4c56a4;
+    --amarelo: #f7b531;
+    --branco: #ffffff;
+}
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f5b041, #f39c12);
+}
+
+/* NAVBAR */
+.navbar {
+    background: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    height: auto;
+    width:120px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Botão branco (Contato) */
+.btn-contato {
+    background: white;
+    color: var(--azul) !important;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+/* CARROSSEL */
+.carousel {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* TEXTO SOBREPOSTO */
+.hero-text {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+}
+
+.hero-text button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* FAIXA AMARELA */
+.faixa-amarela {
+    background: var(--amarelo);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* SEÇÃO SOBRE */
+.sobre {
+    background: var(--azul);
+    padding: 60px 20px;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* TEXTO */
+.texto-sobre {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* IMAGEM */
+.img-sobre {
+    flex: 1;
+    max-width: 400px;
+}
+
+
+/* PORTFÓLIO */
+.portfolio {
+    background: #eeeeee;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* TEXTO DESCRIÇÃO */
+.descricao {
+    max-width: 700px;
+    margin: 20px auto 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* TÍTULO AMARELO (melhorado) */
+.titulo-amarelo {
+    background: var(--amarelo);
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* GRID */
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* IMAGENS */
+.grid-fotos img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* EFEITO HOVER (igual site moderno) */
+.grid-fotos img:hover {
+    transform: scale(1.05);
+}
+
+
+/* CONTATO */
+.contato {
+    background: #f7b531;
+    padding: 60px 20px;
+}
+
+.contato-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* BOTÃO CONTATO */
+.contato-titulo h2 {
+    background: #4c56a4;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 40px;
+}
+
+/* FOTO REDONDA */
+.contato-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* LINKS */
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-info a {
+    text-decoration: none;
+    color: #4c56a4;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* RODAPÉ */
+.rodape {
+    text-align: center;
+    padding: 30px;
+    background: #f2f2f2;
+}
+
+.logo-rodape {
+    width: 180px;
+    margin-top: 15px;
+}
+
+/* SEÇÃO DISPONIBILIDADE */
+
+.disponibilidade{
+background:#eeeeee;
+padding:80px 20px;
+}
+
+.disponibilidade-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* COLUNA DIAS */
+
+.dias{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* TÍTULO AZUL */
+
+.titulo-dias{
+background:#4c56a4;
+color:white;
+padding:15px 40px;
+border-radius:40px;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+width:260px;
+}
+
+/* BOTÕES AMARELOS */
+
+.botao-amarelo{
+background:#f7b531;
+color:white;
+padding:12px;
+border-radius:30px;
+text-align:center;
+font-weight:bold;
+width:220px;
+}
+
+/* PERSONAGENS */
+
+.personagens img{
+width:350px;
+}
+
+
+
+.audiovisual {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.audiovisual-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.poster-esquerdo,
+.poster-direito {
+    width: 320px;
+    border: 8px solid #2d7ff9;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.texto-audiovisual {
+    max-width: 500px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.gibi {
+    padding: 80px 40px;
+}
+
+.gibi-box {
+    background: #005eff;
+    border-radius: 35px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.gibi-conteudo h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.gibi-conteudo p {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.gibi-unico {
+    width: 500px;
+    max-width: 1100px;
+    border-radius: 15px;
+}
+
+
+.gibi-imagens{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top:50px;
+}
+
+.gibi-principal{
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
