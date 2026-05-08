@@ -364,3 +364,91 @@ width:350px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+
+
+@media screen and (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* HERO */
+    .hero-text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* SOBRE */
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-sobre {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* GRID FOTOS */
+    .grid-fotos {
+        grid-template-columns: 1fr;
+    }
+
+    /* AUDIOVISUAL */
+    .audiovisual-layout {
+        flex-direction: column;
+    }
+
+    .poster-esquerdo,
+    .poster-direito {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .texto-audiovisual {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* GIBI */
+    .gibi-imagens {
+        flex-direction: column;
+    }
+
+    .gibi-unico,
+    .img-principal {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* DISPONIBILIDADE */
+    .disponibilidade-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* CONTATO */
+    .contato-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* RODAPÉ */
+    .logo-rodape {
+        width: 140px;
+    }
+
+}
